@@ -5,7 +5,7 @@ with open(path,"r") as f:
     html_data = f.read()
 streamlit.html(html_data)
 
-recipe = streamlit.text_input("ENTER A RECIPE", value="", max_chars=None, type="default", label_visibility="visible")
+recipe = streamlit.text_area("ENTER A RECIPE", value="", max_chars=None, label_visibility="visible")
 
 button = streamlit.button("SUBMIT")
 
