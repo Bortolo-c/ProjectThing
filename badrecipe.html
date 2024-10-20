@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bad Cookbook</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+    *,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Baskervville', serif;
+  color: linen;
+  background-color: rgb(20, 30, 40);
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: linen;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+  row-gap: 3rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid rgba(120, 120, 120, 0.6);
+}
+
+.heading {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1.5rem;
+}
+
+.text {
+  grid-column: 2 / 3;
+  font-size: 1.8rem;
+  letter-spacing: 0.6px;
+  column-width: 25rem;
+  text-align: justify;
+}
+
+.hero {
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+.hero-title {
+  text-align: center;
+  color: orangered;
+  font-size: 8rem;
+}
+
+.hero-subtitle {
+  font-size: 2.4rem;
+  color: orangered;
+  text-align: center;
+}
+
+.author {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.author-name a:hover {
+  background-color: #306203;
+}
+
+.publish-date {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+  display: grid;
+  font-size: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+}
+
+.first-paragraph::first-letter {
+  font-size: 6rem;
+  color: orangered;
+  float: left;
+  margin-right: 1rem;
+}
+
+.quote {
+  color: #00beef;
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.quote::before {
+  content: '" ';
+}
+
+.quote::after {
+  content: ' "';
+}
+
+.text-with-images {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.lists {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.lists li {
+  margin-bottom: 1.5rem;
+}
+
+.list-title, .list-subtitle {
+  color: #00beef;
+}
+
+.image-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  gap: 2rem;
+  place-items: center;
+}
+
+.image-1, .image-3 {
+  grid-column: 1 / -1;
+}
+
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-with-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+  
+  .hero-subtitle,
+  .author,
+  .quote,
+  .list-title {
+    font-size: 1.8rem;
+  }
+  
+  .social-icons {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  } 
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="heading">
+        <header class="hero"> hy yyh7 
+          <h1 class="hero-title">Khronic Kings</h1>
+          <p class="hero-subtitle">
+            Our efforts are to help those with chronic illness's
+          </p>
+        </header>
+        <div class="author">
+          <p class="author-name">
+            By
+            <a href="https://freecodecamp.org" target="_blank" rel="noreferrer"
+              >Rowen Davis</a
+            >
+          </p>
+          <p class="publish-date">October 19, 2024</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/freecodecamp/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/freecodecamp/">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/freecodecamp">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/school/free-code-camp/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.youtube.com/freecodecamp">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </section>
+      <section class="text">
+        <p class="first-paragraph">
+          Soon we will provide enough success and money to support those will illness's to help all those in need
+        </p>
+        <p>
+            The entire website are to help those with chronic illness's 
+        </p>
+        <blockquote>
+          <hr />
+          <p class="quote">
+            TRASH THIS RECIPE BOOK AND TRY DIFFERENT RECIPES! 
+          </p>
+          <hr />
+        </blockquote>
+        <p>
+            Reading this recipe book may be detrimental for individuals with bowel diseases.
+             The recipes might include ingredients that trigger symptoms or worsen their condition. It's essential for those affected to consult healthcare professionals for tailored dietary advice instead of relying on potentially harmful recipes. 
+             Proper guidance can help manage symptoms effectively and improve overall health. Additionally, individuals should consider keeping a food diary to track their reactions to certain foods, allowing for more informed decisions regarding their diet.
+             Collaboration with a nutritionist can also provide personalized meal plans that cater to their specific needs, ensuring a balanced and safe approach to eating that promotes healing and well-being.
+        </p>
+        <p>
+            Certain ingredients can exacerbate bowel diseases, including gluten, dairy, high-fat foods, and artificial sweeteners. 
+            Additionally, spicy foods, caffeine, and alcohol may trigger uncomfortable symptoms. 
+            It is crucial to identify personal triggers and avoid them to manage the condition effectively. 
+            Keeping a food diary can help track reactions. Consulting with a healthcare professional is recommended for tailored advice and support. Lifestyle changes, such as stress management and regular exercise, can also contribute to better digestive health.
+        </p>
+        <p>
+            Foods that may lessen bowel disease include high-fiber foods such as fruits, vegetables, and whole grains, which promote regularity and gut health. Probiotics found in yogurt, kefir, and sauerkraut help maintain a healthy gut microbiome. 
+            Omega-3 fatty acids from fatty fish and flaxseeds reduce inflammation. Lean proteins like chicken, turkey, and legumes support muscle health. 
+            Additionally, ingredients like ginger and turmeric can further reduce inflammation and enhance digestive health, making them beneficial additions to your diet.
+        </p>
+      </section>
+      <section class="text text-with-images">
+        <article class="brief-history">
+          <h3 class="list-title">A Brief History</h3>
+          <p>Of our experience</p>
+          <ul class="lists">
+            <li>
+              <h4 class="list-subtitle">V1 - 2014</h4>
+              <p>
+                Chronic Kings began in high school when a group of friends bonded over their shared struggles with health issues. 
+                They explored various diets and wellness practices, documenting their journey to help others facing similar challenges.
+                 This experience fostered a passion for promoting gut health and wellness.
+              </p>
+            </li>
+            <li>
+              <h4 class="list-subtitle">V2 - 2015</h4>
+              <p>We added a website and documented it on it while also finding out what worked and what 
+                didn't for the help those with chronic .
+            </p>
+            </li>
+            <li>
+              <h4 class="list-subtitle">V3 - 2015</h4>
+              <p>
+            We started gaining success and saving more lives while sustaining our own. 
+            We also made several locations across the US for people to schedule clinics to get medicine and advice. 
+              </p>
+            </li>
+            <li>
+              <h4 class="list-subtitle">V6 - 2024</h4>
+              <p>
+                Became a multi-million dollar company and have saved approximatetly 946,000 lives over a span of ten years.
+              </p>
+            </li>
+          </ul>
+        </article>
+        <aside class="image-wrapper">
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+            alt="image of the quote machine project"
+            loading="lazy"
+            class="image-1"
+            width="600"
+            height="400"
+          />
+          <blockquote class="image-quote">
+            <hr />
+            <p class="quote">
+              The millions of people who are getting saved by our recommendations 
+              and also fully or are close to losing their chronic disease as a whole.
+            </p>
+            <hr />
+          </blockquote>
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg"
+            alt="four people working on code"
+            loading="lazy"
+            class="image-3"
+            width="600"
+            height="400"
+          />
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
